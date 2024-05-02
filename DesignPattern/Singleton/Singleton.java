@@ -16,6 +16,7 @@ public class Singleton {
         // System.out.println(firstClass.hashCode());
         // System.out.println(secondClass.hashCode());
 
+        // Break Singleton Pttern with reflection API;
         classA firstObj = classA.getObject();
         System.out.println(firstObj.hashCode());
 
