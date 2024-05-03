@@ -1,6 +1,8 @@
 package DesignPattern.Singleton;
 
-public class classA {
+import java.io.Serializable;
+
+public class classA implements Serializable, Cloneable{
 
     private static classA firstClass;
     
@@ -19,6 +21,16 @@ public class classA {
        }
         return firstClass;
     }
+
+    public Object readResolve(){
+        return firstClass;
+    }
+
+    @Override
+    public Object clone() throws CloneNotSupportedException 
+    { 
+        return firstClass; 
+    } 
 }
 
 /**
@@ -45,4 +57,8 @@ public class classA {
  * 
  * 
  * 2. Deserilization
+ *    Solution ---> Implement readResolve Method
+ * 
+ * 
+ * 3. Cloning 
  */
