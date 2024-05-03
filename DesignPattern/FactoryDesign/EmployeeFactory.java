@@ -1,4 +1,4 @@
-package DesignPattern.FactoryDesign;
+package designPattern.factoryDesign;
 
 /**
  *   Factory Design Pattern ---> 

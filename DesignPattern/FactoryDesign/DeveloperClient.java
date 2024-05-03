@@ -1,6 +1,6 @@
-package DesignPattern.FactoryDesign;
+package designPattern.factoryDesign;
 
-public class DeveloperClint {
+public class DeveloperClient {
    
     public static void main(String[] args) {
 
